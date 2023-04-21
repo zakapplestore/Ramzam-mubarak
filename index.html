@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMZAN MUBHARAK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Tangerine');
+            *{
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: 'Tangerine', cursive;
+
+            }
+            body{
+                
+            
+                min-height: 110vh;
+                width: auto;
+                overflow: hidden;
+                
+            }
+            section{
+                position: relative;
+                width: 100%;
+                height: 110vh;
+               
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(#ffeb3b,#e91e63);
+            }
+            .text h2{
+                top:3px;
+                margin-top:90px;
+                position: relative;
+                text-align: center;
+                font-size: 3rem;
+                color: #fff;
+                text-shadow: 0 5px 102px rgba(0,0,0,0.2);
+               }
+
+            .text h2 span{
+                font-size: 1.5rem;
+                font-family:sans-serif ;
+             
+
+            }
+            .text h2:before{
+                content: '';
+                position: absolute;
+                left:19px;
+                top: -44px;
+                width: 200px;
+                height: 200px;
+                background-color: transparent;
+                border-left:15px solid #fff;
+                border-radius: 50%;
+                transform: rotate(-30deg);
+                box-shadow: -14px 1px 10px rgba(0,0,0,0.1);
+                align-items: center;
+            }
+            .wish h5{
+                color: #fff;
+                justify-content:top;
+                align-items: top;
+                font-size: 2rem;
+            }
+            .mosque{
+                position: absolute;
+                bottom: 0;
+                left:0;
+                width: 100%;
+                height: 500px;
+                background: url(mosque.png);
+                background-repeat: repeat-x;
+                background-size: 1200px;
+                z-index: 1;
+                pointer-events: none;
+                animation: animate 10s linear infinite;
+            }
+            @keyframes animate{
+                0%{
+                    background-position: 0px;
+                }
+                100%{
+                    background-position: 1200px;
+                }
+            }
+            .mosque:before{
+                content: "";
+                opacity: 0.1;
+                position: absolute;
+                bottom: 0;
+                left:0;
+                width: 100%;
+                height: 600px;
+                background: url(mosque.png);
+                background-repeat: repeat-x;
+                background-size: 1600px;
+                z-index: 1;
+                pointer-events: none;
+                animation: animateReverse 40s linear infinite;
+            }
+            @keyframes animateReverse{
+                0%{
+                    background-position: 1600px;
+                }
+                100%{
+                    background-position: 0px;
+                }
+            }
+            .offer h1{ 
+                font-size: 1.5rem;
+                font-family: italic;
+                padding-top: 30px;
+                color: black;
+            }
+            
+     
+            
+.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:999px){
+    text h2{
+                position: relative;
+                text-align: center;
+                font-size:4rem;
+                color: #fff;
+                text-shadow: 0 5px 102px rgba(0,0,0,0.2);
+                justify-content: top;
+               }
+               text h2:before{
+                content: '';
+                position: absolute;
+                top: -6px;
+                left: -40px;
+                width: 200px;
+                height: 200px;
+                background-color: transparent;
+                border-left:15px solid #fff;
+                border-radius: 50%;
+                transform: rotate(-30deg);
+                box-shadow: -14px 1px 10px rgba(0,0,0,0.1);
+            }
+}
+sub{
+    padding-top: 10px;
+    font-size: 1.8rem;
+}
+
+
+        </style>
+    </head>
+    <body>
+       
+        <section id="particles-js">
+            <div class="offer">
+                <h1 class="text-center">Best wishes from Our<br>ZAK Apple Store</h1>
+                
+            </div>
+            
+           
+            <div class="text">
+                <h2 >Ramadan Mubarak <br><span>To you & Your Family</span><br><sub> from <br>zadidul ahmed</sub></h2>
+            </div>
+            <div class="mosque">
+
+            </div>
+           
+        </section>
+        
+       
+<script src="particles.js"></script>
+<script src="app.js"></script>
+
+
+    </body>
+</html>
